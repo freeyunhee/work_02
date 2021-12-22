@@ -10,6 +10,22 @@ $(function(){
   })
 
 
+
+  gsap.to('.sc_hero .video_box video',{
+    scrollTrigger:{
+      trigger:".sc_hero",
+      start:"top top",
+      end:"+=1200",
+      scrub:1,
+      // markers:true,
+      pin:".sc_hero"
+    },
+    "clip":"rect(0vh, 100vw, 100vh, 0vw)",
+    // y:100,
+    // duration:,
+  })
+
+
   // sc_gallery_swipe
   var swiper = new Swiper(".gallery_swiper", {
       slidesPerView: 2.3,
@@ -43,21 +59,6 @@ $(function(){
  
 
 
-
-  gsap.to('.sc_hero .video_box video',{
-    scrollTrigger:{
-      trigger:".sc_hero",
-      start:"top top",
-      end:"+=1200",
-      scrub:1,
-      // markers:true,
-      pin:".sc_hero"
-    },
-    "clip":"rect(0vh, 100vw, 100vh, 0vw)",
-    // y:100,
-    // duration:,
-  })
-
 // 글자 오른쪽에서 왼쪽으로 흐르기 
 
 gsap.to(".slogan", {
@@ -69,8 +70,11 @@ gsap.to(".slogan", {
     start:"top 80%",
     end:"bottom 80%"
   },
-  x:-50+'%',
-   duration: 5,
+    x:-50+'%',
+    // 'right':'-5%',
+    // 'left':'10%',
+    // x:-20+'%',
+    // xPercent: -30,
 });
 
 
@@ -80,10 +84,10 @@ gsap.to(".sc_news_title", {
     // toggleActions: "restart none reverse none",
     scrub: 1,
     // markers:true,
-    start:"top 50%",
-    end:"bottom 80%"
+    start:"30% 50%",
+    end:"bottom 65%"
   },
-  x:-250+'%',
+  x:-150+'%',
    duration: 5,
 });
 
@@ -149,7 +153,7 @@ gsap.from(startCount, {
       pin:".sc_beginning",
       // toggleActions: "restart none reverse none",
       scrub: 1,
-      // markers:true,
+      markers:true,
       start:"top top",
       end:"bottom 10%",
      
