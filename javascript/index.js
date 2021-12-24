@@ -153,7 +153,7 @@ gsap.from(startCount, {
       pin:".sc_beginning",
       // toggleActions: "restart none reverse none",
       scrub: 1,
-      markers:true,
+      // markers:true,
       start:"top top",
       end:"bottom 10%",
      
