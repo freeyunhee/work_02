@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTENNA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./javascript/jquery-1.12.4.min.js"></script>
+    <script src="./javascript/swiper-bundle.min.js"></script>
+    <script src="./javascript/gsap.min.js"></script>
+    <script src="./javascript/ScrollTrigger.min.js"></script>
+    <script src="./javascript/index.js"></script>
+</head>
+<body>
+    <main>
+        <section class="sc_hero">
+            <!-- <h2 class="blind">메인 페이지</h2> h2가 제목이니까 -->
+            <h2 class="title">With,<br>Antenna</h2>
+            <div class="lang_box">
+                <span class="blind">언어 설정</span>
+                <a href="" class="btn_lang active">EN<span class="blind">영어</span></a>
+                <a href="" class="btn_lang">RU<span class="blind">러시아어</span></a>
+            </div>
+            <div class="video_box">
+                <h2 class="title">With,<br>Antenna</h2>
+                <video src="./videos/hero.mp4" playsinline muted="muted" preload autoplay="autoplay" loop="loop"></video>
+            </div>
+        </section><!-- sc_hero -->
+        <section class="sc_vision color white" data-color="#fff">
+            <h2 class="blind">비전</h2>
+            <div class="header">
+                <h2 class="slogan">Good People,<br>Good Music</h2>
+            </div>
+            <div class="content">
+                <p class="desc">
+                    We tell the story of each artists of the way they perceive and value their lives in their music. Bringing out each artists' essence in music and introducing it to the world, we believe this is what makes the good people and good music.
+                </p>
+                <p class="desc">
+                    아티스트들의 음악에 담긴 삶의 시선이나 방식을 이야기하고자 합니다. 소속 아티스트 각자가 지닌 본질을 끌어내어 음반을 제작하고 소개하는 것, 우리는 이것이 좋은 사람, 좋은 음악을 만들어 낸다고 믿고 있습니다.
+                </p>
+            </div>
+        </section><!-- sc_vision -->
+        <section class="sc_statistics" data-color="#fed700">
+            <h2 class="blind">통계 자료</h2>
+            <div class="item">
+                <div class="value first">1997</div>
+                <div class="name">START</div>
+            </div>
+            <div class="item">
+                <div class="value second">2007</div>
+                <div class="name">RENAME</div>
+            </div>
+            <div class="item">
+                <div class="value third">15</div>
+                <div class="name">ARTISTS</div>
+            </div>
+        </section><!-- sc_statistics -->
+        <section class="sc_big_logo color" data-color="#fff">
+            <h2 class="blind">로고</h2>
+            <div class="logo_area">
+                <img src="./images/content/big_logo.png" alt="" class="logo">
+                <img src="./images/content/big_logo_bg.png" alt="" class="logo_bg">
+            </div>
+        </section><!-- sc_big_logo -->
+        <section class="sc_gallery_swipe color" data-color="#000">
+            <h2 class="blind">소속 아티스트</h2>
+            <div class="swiper gallery_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg_yellow">
+                        <img src="./images/content/artist01.png" alt="">
+                    </div>
+                    <div class="swiper-slide bg_black">
+                        <img src="./images/content/artist02.png" alt="">
+                    </div>
+                    <div class="swiper-slide bg_yellow">
+                        <img src="./images/content/artist03.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/content/artist04.png" alt="">
+                    </div>
+                    <div class="swiper-slide bg_black">
+                        <img src="./images/content/artist05.png" alt="">
+                    </div>
+                    <div class="swiper-slide bg_yellow">
+                        <img src="./images/content/artist06.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/content/artist07.png" alt="">
+                    </div>
+                    <div class="swiper-slide bg_black">
+                        <img src="./images/content/artist08.png" alt="">
+                    </div>
+                    <div class="swiper-slide bg_yellow">
+                        <img src="./images/content/artist09.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/content/artist10.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section><!-- sc_gallery_swipe -->
+        <section class="sc_ceo color" data-color="#000">
+            <h2 class="blind">대표 소개</h2>
+            <h2 class="title">
+                수많은 목소리로<br>
+                변치 않는 한 가지를<br>
+                이야기하는 뮤지션. 토이.
+            </h2>
+            <div class="content">
+                <div class="info_ceo">
+                    <img src="./images/content/profile.png" alt="" class="profile">
+                    <div class="txt_box">
+                        <strong class="name">토이 (유희열)</strong>
+                        <span class="position">대표</span>
+                    </div>
+                </div>
+                <h3 class="desc">
+                    평범한 일상에 <span>반짝이는</span> 숨을 불어넣고,<br>
+                    하루의 아주 작은 부분을 찾아내어<br>
+                    그 속에 <span>온기</span>와 <span>위로</span>를 담는 뮤지션.
+                </h3>
+                <video src="./videos/ceo.webm" playsinline muted="muted" preload autoplay="autoplay" loop="loop"></video>
+            </div>
+        </section><!-- sc_ceo -->
+        <section class="sc_gallery_fixed" data-color="#fed700">
+            <div class="content">
+                <div class="item">
+                    <img src="./images/content/gallery_fixed01.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/content/gallery_fixed02.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/content/gallery_fixed03.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/content/gallery_fixed04.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/content/gallery_fixed05.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/content/gallery_fixed06.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/content/gallery_fixed07.jpg" alt="">
+                </div>
+            </div>
+        </section><!-- sc_gallery_fixed -->
+        <section class="sc_team" data-color="#fed700">
+            <div class="txt_box">
+                <p class="desc">
+                    Music of Antenna embodies each artists' lifestyle. We discover the value of music with different artists and their lifestyle.
+                </p>
+                <strong class="count">5285</strong>
+            </div>
+            <div class="swiper team_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/content/yoo01.jpg" alt="" class="bg">
+                        <div class="name_box">
+                            <span class="name">Toy</span>
+                            <p class="desc">수많은 목소리로 변치 않는 한 가지를 이야기하는 뮤지션. 토이.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide custom">
+                        <img src="./images/content/gallery_fixed02.jpg" alt="" class="bg">
+                        <div class="name_box">
+                            <span class="name">Lee Jin-Ah</span>
+                            <p class="desc">새롭고 놀랍고 신선한, 음표를 뛰어 노는 여린 감성. 이진아.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide custom">
+                        <img src="./images/content/gallery_fixed03.jpg" alt="" class="bg">
+                        <div class="name_box">
+                            <span class="name">Jung Seung-Hwan</span>
+                            <p class="desc">사람과 사람 사이의 마음에 어떤 노래가 흐른다면, 기꺼이 놓일 목소리.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide custom">
+                        <img src="./images/content/gallery_fixed07.jpg" alt="" class="bg">
+                        <div class="name_box">
+                            <span class="name">Lucid Fall</span>
+                            <p class="desc">기타를 품은 음유시인, 목소리 속에 마음을 담다. 루시드폴.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide custom">
+                        <img src="./images/content/gallery_fixed08.jpg" alt="" class="bg">
+                        <div class="name_box">
+                            <span class="name">Peppertones</span>
+                            <p class="desc">음악 속에서 영롱하게 빛나는 선명한 청춘. 페퍼톤스.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- sc_team -->
+        <section class="sc_goal color" data-color="#fff">
+            <h2 class="title">
+                Music<br>
+                Next<br>
+                Antenna
+            </h2>
+            <div class="desc">
+                음악적으로 충실한 아티스트의 감동적인 음악을 소개하자라는 취지를 갖고 시작한 안테나 뮤직은 이제 안테나라는 새로운 이름으로 거듭났습니다. 안테나는 지금까지의 경험과 진심, 새로움과 글로벌적인 감각을 더해 모두의 마음에 남는 음악 그리고 모든 곳에서 환영받을 수 있는 회사 및 브랜드가 되고자 합니다.
+            </div>
+        </section><!-- sc_goal -->
+        <section class="sc_story color" data-color="#fff">
+            <div class="content">
+                <h3 class="year">1997</h3>
+                <div class="item">
+                    <p>
+                        토이뮤직 설립
+                    </p>
+                    <div class="img_box">
+                        <img src="" alt="" class="none">
+                        <img src="" alt="" class="none">
+                    </div>
+                    <video src="./videos/video01.mp4" playsinline muted="muted" autoplay="autoplay" loop="loop"></video>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                </div>
+                <div class="item">
+                    <p>
+                        회사의 시작은 1997년 설립한 토이뮤직. 루시드폴, 박새별을 영입하면서 2007년 안테나 뮤직으로 개명했다. 음악의 본질에 충실한 음악을 소개하자는 의미로, 지붕 위 안테나의 전파처럼 좋은 음악을 널리 보내자는 뜻. 이후 정재형과 페퍼톤스를 차례로 영입해 싱어송라이터 집단의 모양을 갖추게 되었다.
+                    </p>
+                    <div class="img_box">
+                        <img src="" alt="" class="none">
+                        <img src="" alt="" class="none">
+                    </div>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                </div>
+            </div>    
+            <div class="content">
+                <h3 class="year">2007</h3>
+                <div class="item">
+                    <p>토이뮤직에서 안테나뮤직으로 회사명 변경</p>
+                    <p>디어 클라우드 1집 'Dear Cloud'</p>
+                    <p>루시드폴 3집 '국경의 밤'</p>
+                    <p>토이 6집 'Thank you'</p>
+                    <div class="img_box">
+                        <img src="" alt="" class="none">
+                        <img src="" alt="" class="none">
+                    </div>
+                    <video src="./videos/video02.mp4" playsinline muted="muted" autoplay="autoplay" loop="loop"></video>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                </div>
+                <div class="item">
+                    <p class="none"></p>
+                    <div class="img_box">
+                        <img src="" alt="" class="none">
+                        <img src="" alt="" class="none">
+                    </div>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="year">2013</h3>
+                <div class="item">
+                    <p>
+                        K-POP 스타 시즌3부터 SM의 BoA 대신 안테나뮤직의 유희열이 심사위원으로 참가함에 따라, 그 내실이 속속히 공개되었다<br>
+                        다른 대형 기획사에 비해서는 상당히 작고 소속가수도 매우 적고 워낙 영세한 규모이다보니, 9화에서 캐스팅오디션을 앞두고 6팀의 연습과 녹음을 위해 대대적으로 녹음실과 안무연습실을 확장하는 공사를 단행했다. 덕택에 녹음실 확장에 대표이사실을 털리고 허탈(?)해 하는 사장의 촉촉한 눈가와, 안무연습실을 위해 개인공간을 헐게 된 유희열의 웃음이 방송을 탔다. 그리고 결국 안테나에서 춤을 메인으로 하는 참가자는 한 명도 캐스팅하지 않았다는 것이
+                    </p>
+                    <div class="img_box half">
+                        <img src="./images/content/story_img01.jpeg" alt="">
+                        <img src="./images/content/story_img02.jpeg" alt="">
+                    </div>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="year">2015</h3>
+                <div class="item">
+                    <p>
+                        안테나 뮤직(Antenna Music)에서<br>안테나(Antenna)로 회사명 변경
+                    </p>
+                    <div class="img_box">
+                        <img src="" alt="" class="none">
+                        <img src="" alt="" class="none">
+                    </div>
+                    <video src="./videos/video03.mp4" playsinline muted="muted" autoplay="autoplay" loop="loop"></video>
+                    <video src="" playsinline muted="muted" autoplay="autoplay" loop="loop" class="none"></video>
+                </div>
+            </div>
+            <div class="content">
+                <h3 class="year">2021</h3>
+                <div class="item">
+                    <p>
+                        2021년 7월 14일, 최종적으로 안테나에서 유재석과의 계약을 확정지었다. 유재석, 안테나 측은 공식 보도자료를 통해 유재석, 유희열 두 사람의 오랜 교류를 통한 신뢰가 소속사 선택의 이유라고 발표했고, 앞으로 친한 동료들과 재미있는 일들을 기대한다고 밝혔다.
+                    </p>
+                    <div class="img_box">
+                        <img src="" alt="" class="none">
+                        <img src="" alt="" class="none">
+                    </div>
+                    <video src="./videos/video05.mp4" playsinline muted="muted" autoplay="autoplay" loop="loop"></video>
+                    <video src="./videos/video01.mp4" playsinline muted="muted" autoplay="autoplay" loop="loop"></video>
+                </div>
+            </div>
+        </section><!-- sc_story -->
+        <section class="sc_play" data-color="#fed700">
+                <div id="section_box">
+                    <section class="item section01">
+                        <img src="./images/content/play01.jpg" alt="">
+                    </section>
+                    <section class="item section02">
+                        <img src="./images/content/play02.jpg" alt="">
+                    </section>
+                    <section class="item section03">
+                        <img src="./images/content/play03.jpg" alt="">
+                    </section>
+                    <section class="item section04">
+                        <img src="./images/content/play04.jpg" alt="">
+                    </section>
+                    <section class="item section05">
+                        <img src="./images/content/play05.jpg" alt="">
+                    </section>
+                </div>
+        </section><!-- sc_play -->
+        <section class="sc_news color" data-color="#fff">
+            <h2 class="sc_news_title">With, Antenna</h2>
+            <div class="content">
+                <div class="item">
+                    <span class="date">
+                        Apr 22, 2019
+                    </span>
+                    <h3 class="heading">
+                        정승환, 6월 단독 콘서트 개최…올림픽홀 입성 ‘역대 최대 규모’ [공식]
+                    </h3>
+                    <p class="desc">
+                        정승환 역대급 단독 콘서트 ‘안녕, 나의 우주’ 또 한 번의 성장 예고 '26일 티켓 예매 오픈'<br>
+                        가수 정승환이 오는 6월 동명의 단독 콘서트를 연다.<br>
+                        정승환 소속사 안테나는 22일 “정승환이 오는 6월 22일, 23일 양일간 서울 송파구 올림픽공원 올림픽홀에서 단독 콘서트 ‘안녕, 나의 우주’를 개최한다”고 밝혔다.
+                    </p>
+                </div>
+                <div class="item">
+                    <span class="date">
+                        Apr 19, 2019 
+                    </span>
+                    <h3 class="heading">
+                        [출판계]유희열 '딸에게 보내는 노래' 그림책으로 나와
+                    </h3>
+                    <p class="desc">
+                        그룹 ‘토이’의 6집 앨범 ‘땡큐(Thank you)’에 수록된 노래 ‘딸에게 보내는 노래’가 그림책으로 출간됐다. 유희열의 노랫말에 맞춰 그림책 작가 천유주가 그림을 그렸다. 창비의 노랫말 그림책 시리즈의 첫 주자다.
+                    </p>
+                </div>
+                <div class="item">
+                    <span class="date">
+                        Apr 3, 2019
+                    </span>
+                    <h3 class="heading">
+                        정재형, '서울재즈페스티벌'서 신곡 최초 공개
+                    </h3>
+                    <p class="desc">
+                        가수 겸 피아니스트 정재형이 9년 만에 발표하는 신곡을 '서울 재즈 페스티벌'에서 최초 공개한다.<br>
+                        정재형은 5월 26일 서울 올림픽공원에서 열리는 '서울 재즈 페스티벌 2019' 둘째 날에 '아베크 피아노(avec piano, 피아노와 함께)'라는 테마로 출연해 지난 앨범 '르쁘띠피아노(le petit piano)' 활동 이후 첫 페스티벌 단독 공연을 치른다.
+                    </p>
+                </div>
+                <div class="item">
+                    <span class="date">
+                        Feb 20, 2019
+                    </span>
+                    <h3 class="heading">
+                        권진아, 28일 자작곡 ‘오늘 뭐 했는지 말해봐’ 발표(공식)
+                    </h3>
+                    <p class="desc">
+                        가수 권진아가 오는 28일 신곡을 발표한다.<br>
+                        권진아는 2월 20일 오전, 소속사 안테나의 공식 SNS를 통해서 감성적이면서도 시크한 무드의 인물 사진을 공개했다. 여기에는 2월 28일 오후 6시에 공개되는 신곡 ‘오늘 뭐 했는지 말해봐’의 제목이 등장해 눈길을 끈다.
+                    </p>
+                </div>
+                <div class="item">
+                    <span class="date">
+                        Feb 14, 2019
+                    </span>
+                    <h3 class="heading">
+                        박새별, '왜그래 풍상씨' OST 참여…'너무 아픈 사랑은 사랑이 아니었음을' 리메이크
+                    </h3>
+                    <p class="desc">
+                        뮤지션 박새별이 KBS2 수목드라마 ‘왜그래 풍상씨’ OST의 네 번째 가창자로 나섰다.<br>
+                        드라마 ‘왜그래 풍상씨’의 OST Part.4 ‘너무 아픈 사랑은 사랑이 아니었음을’이 오늘 14일 오후 6시에 공개된다.
+                    </p>
+                </div>
+                <div class="item">
+                    <span class="date">
+                        Dec 10, 2018
+                    </span>
+                    <h3 class="heading">
+                        페퍼톤스, 연말 콘서트로 한 해 마무리.."공연할 때가 제일 좋다"
+                    </h3>
+                    <p class="desc">
+                        밴드 페퍼톤스(peppertones, 신재평-이장원)가 연말콘서트를 성공적으로 마쳤다.<br>
+                        페퍼톤스는 지난 7일부터 9일까지 총 3일간 서울 이화여대 삼성홀에서 2018 연말공연 ‘롱웨이: 투홈 (LONG WAY : TO HOME)으로 팬들과 교감했다.<br>
+                        매년 연말 팬들과의 만남인 연말 공연으로 한 해를 마무리하는 밴드 페퍼톤스는 앞서 6월 음반 발매 기념 공연과 7월 클럽투어 모두 정규 6집 음반의 타이틀인 ‘롱웨이(LONG WAY)’에서 파생된 콘셉트로 오랫동안 머나먼 길을 떠났다가 돌아오는 긴 여행의 느낌으로 치렀다.
+                    </p>
+                </div>
+                <a href="" class="link_more">
+                    <span class="link_txt">
+                        More News
+                    </span>
+                    <i class="link_icon"></i>
+                </a>
+            </div>
+        </section><!-- sc_news -->
+        <section class="sc_beginning" data-color="#fed700">
+            <h2 class="title">
+                THE ECHO<br>
+                THROUGH<br>
+                THE ANTENNA
+            </h2>
+            <div class="content">
+                <div class="item up01">
+                    <img src="./images/content/gallery_fixed01.jpg" alt="">
+                </div>
+                <div class="item up02">
+                    <img src="./images/content/gallery_fixed02.jpg" alt="">
+                </div>
+                <div class="item up03">
+                    <img src="./images/content/gallery_fixed03.jpg" alt="">
+                </div>
+                <div class="item up04">
+                    <img src="./images/content/gallery_fixed04.jpg" alt="">
+                </div>
+                <div class="item up05">
+                    <img src="./images/content/gallery_fixed05.jpg" alt="">
+                </div>
+                <div class="item up06">
+                    <img src="./images/content/gallery_fixed06.jpg" alt="">
+                </div>
+                <div class="item up07">
+                    <img src="./images/content/gallery_fixed07.jpg" alt="">
+                </div>
+            </div>
+        </section><!-- sc_beginning -->
+        <section class="sc_thanks color" data-color="#000">
+            <div class="content">
+                <p>
+                    Good music made by good people and we deliver the music that vividly and truly touches our hearts. Music of Antenna embodies each artists' lifestyle. We discover the value of music with different artists and their lifestyle.
+                </p>
+                <p>
+                    We tell the story of each artists of the way they perceive and value their lives in their music. Bringing out each artists' essence in music and introducing it to the world, we believe this is what makes the good people and good music.
+                </p>
+                <p>
+                    음악적으로 충실한 아티스트의 감동적인 음악을 소개하자라는 취지를 갖고 시작한 안테나 뮤직은 이제 안테나라는 새로운 이름으로 거듭났습니다. 안테나는 지금까지의 경험과 진심, 새로움과 글로벌적인 감각을 더해 모두의 마음에 남는 음악 그리고 모든 곳에서 환영받을 수 있는 회사 및 브랜드가 되고자 합니다.
+                </p>
+            </div>
+        </section><!-- sc_thanks -->
+    </main>
+    <footer class="color" data-color="#fff">
+        <div class="logo_area">
+            <h2 class="title">
+                MUSIC<br>
+                NEXT<br>
+                ANTENNA
+            </h2>
+            <h3 class="f_logo"><a href=""><span class="blind">멜론패션그룹</span></a></h3>
+        </div><!-- logo_area -->
+        <div class="link_area">
+            <a href="" class="f_link">
+                <img src="./images/content/f_bg01.jpg" alt="" class="bg">
+                PRESS-CENTER
+            </a>
+            <a href="" class="f_link">
+                <img src="./images/content/f_bg02.jpg" alt="" class="bg">
+                MELON OFFICE
+            </a>
+            <a href="" class="f_link">
+                <img src="./images/content/f_bg03.jpg" alt="" class="bg">
+                BRANDS
+            </a>
+        </div><!-- link_area -->
+        <div class="developer_area">
+            <a href=""><span class="blind">홈페이지 제작</span>Site by Yunhee</a>
+        </div><!-- developer_area -->
+    </footer>
+</body>
+</html>
