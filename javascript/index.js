@@ -11,20 +11,7 @@ $(function(){
 
 
 
-  gsap.to('.sc_hero .video_box video',{
-    scrollTrigger:{
-      trigger:".sc_hero",
-      start:"top top",
-      end:"+=1200",
-      scrub:1,
-      // markers:true,
-      pin:".sc_hero"
-    },
-    "clip":"rect(0vh, 100vw, 100vh, 0vw)",
-    // y:100,
-    // duration:,
-  })
-
+  
 
   // sc_gallery_swipe
   var swiper = new Swiper(".gallery_swiper", {
@@ -56,7 +43,21 @@ $(function(){
     loop: true,
   });
 
- 
+
+  gsap.to('.sc_hero .video_box video',{
+    scrollTrigger:{
+      trigger:".sc_hero",
+      start:"top top",
+      end:"+=1200",
+      scrub:1,
+      // markers:true,
+      pin:".sc_hero"
+    },
+    "clip":"rect(0vh, 100vw, 100vh, 0vw)",
+    // y:100,
+    // duration:,
+  })
+
 
 
 // 글자 오른쪽에서 왼쪽으로 흐르기 
@@ -64,31 +65,25 @@ $(function(){
 gsap.to(".slogan", {
   scrollTrigger: {
     trigger:".sc_vision",
-    // toggleActions: "restart none reverse none",
     scrub: 1,
     // markers:true,
     start:"top 80%",
-    end:"bottom 80%"
+    end:"bottom 80%",
   },
     x:-50+'%',
-    // 'right':'-5%',
-    // 'left':'10%',
-    // x:-20+'%',
-    // xPercent: -30,
 });
 
 
 gsap.to(".sc_news_title", {
   scrollTrigger: {
     trigger:".sc_news",
-    // toggleActions: "restart none reverse none",
     scrub: 1,
     // markers:true,
     start:"30% 50%",
-    end:"bottom 65%"
+    end:"bottom 65%",
   },
   x:-150+'%',
-   duration: 5,
+  duration: 5,
 });
 
 
@@ -99,32 +94,34 @@ var startCount = document.querySelectorAll(".sc_statistics .value")
 gsap.from(startCount, {
   ease: "none",
   duration: 3,
-  // onUpdate: changeNumber,
   textContent: 0,
   snap: {
-     textContent: 2 //자리수
+     textContent: 1
   },
   scrollTrigger: {
     trigger:".sc_statistics .value",
     toggleActions: "restart none restart none",
+    markers:true,
+    // start:"top top",
+    // end:"bottom top",
   },
 });
 
-var startCount = document.querySelectorAll(".sc_team .count")
+// var startCount_two = document.querySelectorAll(".sc_team .count")
 
-gsap.from(startCount, {
-  ease: "none",
-  duration: 3,
-  // onUpdate: changeNumber,
-  textContent: 0,
-  snap: {
-     textContent: 1 //자리수
-  },
-  scrollTrigger: {
-    trigger:".sc_team .count",
-    toggleActions: "restart none restart none",
-  },
-});
+// gsap.from(startCount_two, {
+//   ease: "none",
+//   duration: 3,
+//   // onUpdate: changeNumber,
+//   textContent: 0,
+//   snap: {
+//      textContent: 1 //자리수
+//   },
+//   scrollTrigger: {
+//     trigger:".sc_team .count",
+//     toggleActions: "restart none restart none",
+//   },
+// });
 
 
 
@@ -156,7 +153,6 @@ gsap.from(startCount, {
       // markers:true,
       start:"top top",
       end:"bottom 10%",
-     
     },
       // top: 50+"%",
       y: -250+"%",
