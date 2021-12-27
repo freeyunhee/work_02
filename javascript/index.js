@@ -101,27 +101,27 @@ gsap.from(startCount, {
   scrollTrigger: {
     trigger:".sc_statistics .value",
     toggleActions: "restart none restart none",
-    markers:true,
+    // markers:true,
     // start:"top top",
     // end:"bottom top",
   },
 });
 
-// var startCount_two = document.querySelectorAll(".sc_team .count")
+var startCount_two = document.querySelectorAll(".sc_team .count")
 
-// gsap.from(startCount_two, {
-//   ease: "none",
-//   duration: 3,
-//   // onUpdate: changeNumber,
-//   textContent: 0,
-//   snap: {
-//      textContent: 1 //자리수
-//   },
-//   scrollTrigger: {
-//     trigger:".sc_team .count",
-//     toggleActions: "restart none restart none",
-//   },
-// });
+gsap.from(startCount_two, {
+  ease: "none",
+  duration: 3,
+  // onUpdate: changeNumber,
+  textContent: 0,
+  snap: {
+     textContent: 1 //자리수
+  },
+  scrollTrigger: {
+    trigger:".sc_team .count",
+    toggleActions: "restart none restart none",
+  },
+});
 
 
 
