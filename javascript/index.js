@@ -35,8 +35,8 @@ $(function(){
   });
 
 
-  // team_swiper
-  var swiper = new Swiper(".team_swiper", {
+  // artist_swiper
+  var swiper = new Swiper(".artist_swiper", {
     slidesPerView: 1.5,
     spaceBetween: 30,
     centeredSlides: true,
@@ -107,7 +107,7 @@ gsap.from(startCount, {
   },
 });
 
-var startCount_two = document.querySelectorAll(".sc_team .count")
+var startCount_two = document.querySelectorAll(".sc_artist .count")
 
 gsap.from(startCount_two, {
   ease: "none",
@@ -118,7 +118,7 @@ gsap.from(startCount_two, {
      textContent: 1 //자리수
   },
   scrollTrigger: {
-    trigger:".sc_team .count",
+    trigger:".sc_artist .count",
     toggleActions: "restart none restart none",
   },
 });
@@ -144,10 +144,10 @@ gsap.from(startCount_two, {
 
   //사진들 떠오르는 이벤트
 
-  gsap.to(".sc_beginning .content", {
+  gsap.to(".sc_bottom_vis .content", {
     scrollTrigger: {
-      trigger:".sc_beginning",
-      pin:".sc_beginning",
+      trigger:".sc_bottom_vis",
+      pin:".sc_bottom_vis",
       // toggleActions: "restart none reverse none",
       scrub: 1,
       // markers:true,
